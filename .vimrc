@@ -12,6 +12,7 @@ Plug 'kristijanhusak/vim-js-file-import'
 Plug 'isRuslan/vim-es6'
 Plug 'ternjs/tern_for_vim'
 Plug 'w0rp/ale'
+Plug 'posva/vim-vue'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
