@@ -10,9 +10,9 @@ Plug 'gosukiwi/vim-atom-dark'
 Plug 'Galooshi/vim-import-js'
 Plug 'kristijanhusak/vim-js-file-import'
 Plug 'isRuslan/vim-es6'
-Plug 'ternjs/tern_for_vim'
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'posva/vim-vue'
+Plug 'rking/ag.vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -79,6 +79,12 @@ nmap <leader><space> :nohlsearch<CR>
 
 "add spaces after comment delimiters by default 'Nerd commenter'
 let g:NERDSpaceDelims = 1
+
+"ale 
+let g:ale_echo_cursor = 0
+let b:ale_fixers = ['prettier', 'eslint']
+let g:ale_fix_on_save = 1
+
 "resize splits 
 nmap <Left> :vertical resize -5<CR>
 nmap <Right> :vertical resize +5<CR>
